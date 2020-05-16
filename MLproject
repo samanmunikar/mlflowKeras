@@ -1,0 +1,10 @@
+name: practice
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      batch_size: {type: int, default: 16}
+      epochs: {type: int, default: 40}
+    command: "python KerasPracticeMLFlow.py {batch_size} {epochs}"
